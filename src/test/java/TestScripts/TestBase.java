@@ -29,8 +29,9 @@ public class TestBase {
 	String parentwindow;
 	String childwindow;
 	@BeforeMethod
-	@Parameters({"Browser"})
+	@Parameters("Browser")
 	public void Setup(String Browser) {
+		System.out.println("Parameter value is "+Browser);
 		if(Browser.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver=new ChromeDriver();

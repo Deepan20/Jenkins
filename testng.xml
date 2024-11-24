@@ -4,7 +4,6 @@
 <listeners>
 <listener class-name="Utilities.Reporting"></listener>
 </listeners>
-  <parameter name="Browser" value="edge"></parameter>
   <test thread-count="5" name="Test">
   <classes>
   <class name="TestScripts.Maven_Program"></class>
