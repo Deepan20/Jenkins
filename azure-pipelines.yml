@@ -7,7 +7,7 @@ trigger:
 - Jenkins
 
 pool:
-  vmImage: ubuntu-latest
+  name : my-self-posted-pool
 
 steps:
 - task: Maven@3
